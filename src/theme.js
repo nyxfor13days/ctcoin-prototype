@@ -4,40 +4,34 @@ export const theme = createTheme({
 	palette: {
 		type: 'dark',
 		primary: {
-			main: '#5e81ac',
+			main: '#b58c3f',
 		},
 		secondary: {
-			main: '#8fbcbb',
+			main: '#f5bc00',
 		},
 		background: {
-			default: '#2e3440',
-			paper: '#3b4252',
+			default: '#1c1c1c',
+			paper: '#202020',
 		},
 		text: {
-			primary: '#eceff4',
-			secondary: '#e5e9f0',
-			disabled: '#4c566a',
+			primary: '#fefefe',
 		},
-		error: {
-			main: '#bf616a',
-		},
-		warning: {
-			main: '#d08770',
-		},
-		info: {
-			main: '#81a1c1',
-		},
-		success: {
-			main: '#a3be8c',
-		},
-		divider: '#434c5e',
+		divider: '#1a1a1a',
 	},
 	typography: {
 		fontFamily: 'Noto Sans',
 	},
-	spacing: 5,
+	spacing: 10,
 	shape: {
-		borderRadius: 5,
+		borderRadius: 2,
+	},
+	props: {
+		MuiAppBar: {
+			color: 'transparent',
+		},
+		MuiTooltip: {
+			arrow: true,
+		},
 	},
 	overrides: {
 		MuiSwitch: {
@@ -72,9 +66,5 @@ export const theme = createTheme({
 			},
 		},
 	},
-	props: {
-		MuiTooltip: {
-			arrow: true,
-		},
-	},
 });
+
